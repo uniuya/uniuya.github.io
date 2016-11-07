@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Obj</title>
+    <script type="application/javascript" src="js/three.js"></script>
+    <script type="application/javascript" src="js/jquery.js"></script>
+    <!--<script type="text/javascript" src="js/OrbitControls.js"></script>-->
+    <script type="text/javascript" src="js/OrbitControls.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript">
+    var container = $("#container");
+    var windowWidth = window.innerWidth ;
+    var windowHeight = window.innerHeight;
+    //scene
+    var scene = new THREE.Scene();
+    //renderer
+    var renderer = new THREE.WebGLRenderer({antialias: true});
+    renderer.setSize(windowWidth, windowHeight);
+    container.append(renderer.domElement);
+    renderer.setClearColor(0xFFFFFF);
+
+    var light = new THREE.AmbientLight(0xffffff,1.0);
+    scene.add(light);
+
+
+    var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    // position and point the camera to the center of the scene
+    camera.position.x = 100;
+    camera.position.y = 100;
+    camera.position.z = 100;
+
+    var controls = new THREE.OrbitControls( camera, renderer.domElement );
+    //controls.addEventListener( 'change', render ); // add this only if there is no animation loop (requestAnimationFrame)
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.25;
+    controls.enableZoom = true;
+    //console.log(controls.enabled);
+
+
+    var cubeGeo = new THREE.CubeGeometry(50,50,50);
+    var cubeMtl = new THREE.MeshLambertMaterial({color:0x0000ff,wireframe:true});
+    var cube = new THREE.Mesh(cubeGeo,cubeMtl);
+    scene.add(cube);
+    render();
+    function render() {
+        requestAnimationFrame(render);
+        controls.update(); // required if controls.enableDamping = true, or if controls.autoRotate = true
+        renderer.render(scene, camera);
+    }
+
+
+</script>
+</body>
+</html>

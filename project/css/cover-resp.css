@@ -1,0 +1,49 @@
+
+@media
+only screen and (min-width: 840px) and (max-width: 919px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-width: 840px) and (max-width: 919px) and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-width: 840px) and (max-width: 919px) and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-width: 840px) and (max-width: 919px) and (min-device-pixel-ratio: 1.5),
+only screen and (min-width: 840px) and (max-width: 919px) and (min-resolution: 144dpi),
+only screen and (min-width: 840px) and (max-width: 919px) and (min-resolution: 1.5dppx) {
+    #cover {
+        background-image: url("../pagedeco/cover-1008.jpg");
+        background-size: 504px;
+    }
+    #logo {
+        background-image: url("../pagedeco/logo.png");
+        background-size: 168px;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 999px) {
+    #cover {
+        height: 448px;
+        padding-top: 0;
+        padding-left: 5%;
+        padding-right: 58%;
+    }
+
+    #cover-content {
+        font-size: 16px;
+    }
+
+    #logo {
+        width: 192px;
+        height: 57px;
+        background-image: url("../pagedeco/logo.png");
+    }
+
+    #headline {
+        margin-top: 32px;
+    }
+
+    #sub-headline {
+        margin-top: 16px;
+    }
+
+    #demo-button {
+        margin-top: 32px;
+    }
+}
+

@@ -1,0 +1,224 @@
+/* --== Global settings ==-- */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h1, h2, h3 {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+p {
+    margin: 0; /* Override Bootstrap's bottom padding. */
+}
+
+strong {
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+/* --== Utility classes ==- */
+
+.section-vpadding {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.p-important {
+    font-size: 1.2em;
+}
+
+.p-very-important {
+    font-size: 1.4em;
+}
+
+.p-small {
+    font-size: 0.9em;
+}
+
+.p-tmargin {
+    margin-top: 1em;
+}
+
+.col-vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.bg-gray {
+    background-color: #eee;
+}
+
+/* --== The base (and constant with respect to responsiveness)
+        style of the cover ==-- */
+
+#cover {
+    display: table;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    background-position: right top;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#cover-content {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+}
+
+#cover-content h1 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+}
+
+#sub-headline {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: #555;
+}
+
+#demo-button {
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+#demo-button strong {
+    font-weight: 400;
+}
+
+#demo-button small {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+/* --== Default style of the cover (for browsers that do not
+        understand media queries or for small viewport widths) ==-- */
+
+#cover {
+    padding-top: 3em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#logo {
+    width: 192px;
+    height: 57px;
+    background-image: url("../pagedeco/logo.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+only screen and (min-resolution: 1.5dppx) {
+    #logo {
+        background-image: url("../pagedeco/logo.png");
+        background-size: 192px;
+    }
+}
+
+#headline {
+    margin-top: 18px;
+}
+
+#sub-headline {
+    margin-top: 14px;
+}
+
+#demo-button {
+    margin-top: 28px;
+}
+
+/* --== Other element-specific settings ==-- */
+
+#demo-frame {
+    overflow: hidden;
+    border: 0;
+    width: 100%;
+    height: 400px; /* For browsers with JS disabled */
+}
+#logo-frame {
+    overflow: hidden;
+    border: 0;
+    height: 400px; /* For browsers with JS disabled */
+}
+#email-input {
+    padding-right: 12px; /* no feedback glyph */
+    font-size: 0.9em;
+}
+
+.pict-member {
+    padding-top: 100%;
+    background-size: 100%;
+}
+
+#pict-wojciech {
+    background-image: url("img/wojciech.jpg");
+}
+
+#pict-wojciech:hover {
+    background-image: url("img/wojciech-oculus.jpg");
+}
+
+#pict-jan {
+    background-image: url("img/jan.jpg");
+}
+
+#pict-jan:hover {
+    background-image: url("img/jan-oculus.jpg");
+}
+
+#pict-jagoda {
+    background-image: url("img/jagoda.jpg");
+}
+
+#pict-jagoda:hover {
+    background-image: url("img/jagoda-oculus.jpg");
+}
+
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #fff;
+}
