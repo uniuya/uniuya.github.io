@@ -6,7 +6,7 @@
 
     <link href="project/css/bootstrap.css" rel="stylesheet">
     <link href="project/css/style.css" rel="stylesheet" type="text/css">
-    <link href="project/css/cover-resp.css" rel="stylesheet" type="text/css">
+    <!--<link href="project/css/cover-resp.css" rel="stylesheet" type="text/css">-->
     <!--<link href="project/css/css.css" rel="stylesheet" type="text/css">-->
 
     <!--<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://www.shapespark.com/favicon/favicon-152.png">-->
@@ -21,15 +21,20 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+
+    <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+
     <![endif]-->
     <style type="text/css">
         body{font-family: '微软雅黑', Arial, Helvetica}
         /*#demo-frame{*/
-            /*display: none;*/
+        /*display: none;*/
         /*}*/
+        #iframe0{
 
+        }
     </style>
     <title>My Demo</title>
 
@@ -37,8 +42,8 @@
 
 <body class="font-size-base-auto">
 
-<div id="cover">
-    <div id="cover-content">
+<div class="container">
+    <div id="logo-area" class="text-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div id="logo"></div>
         <h1 id="headline">一个呈现您的设计更好的方式</h1>
         <p id="sub-headline">
@@ -49,7 +54,7 @@
             <small>无需任何插件</small>
         </a>
     </div>
-    <div>
+    <div  class="text-center col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <iframe id="logo-frame" src="project/bb8.html" frameborder="0" scrolling="no" ></iframe>
     </div>
 </div>
@@ -79,17 +84,17 @@
 </div>
 
 <div class="container" id="demo">
-    <div class="row tmargin-md-3">
+    <div class="row text-center">
         <h2>模型Demo</h2>
         <p>请点击图片观看</p>
     </div>
     <div class="row">
-        <div class="col-xs-12 col-sm-7 col-md-5 col-vcenter text-center">
-            <a href="project/chair.html" target="_blank"><img src="project/pagedeco/chair.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-7 col-md-5 col-vcenter text-center col-md-offset-1">
-            <a href="project/statue.html" target="_blank"><img src="project/pagedeco/statue.png"></a>
-        </div>
+        <div class="col-xs-12 col-sm-7 col-md-6 col-vcenter text-center">
+            <a href="project/chair.html" target="_blank"><img src="project/pagedeco/chair.png"/></a>
+        </div><!--kill space
+     --><div class="col-xs-12 col-sm-7 col-md-6 col-vcenter text-center">
+        <a href="project/statue.html" target="_blank"><img src="project/pagedeco/statue.png"/></a>
+    </div>
     </div>
 </div>
 <div class="bg-gray text-center"><h1 style="color:#1C86EE">介绍</h1></div>
@@ -102,7 +107,7 @@
                 我将室内的装修模型搬到网页上来，如何将模型最小化，已经模型的微调等。当然还有体验方式。
             </p>
         </div><!-- Kill spaces
-     --><div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-0
+     --><div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0
 		    col-md-4 col-md-offset-1 tmargin-xs-1 tmargin-sm-0
                     hcenter-xs col-vcenter">
         <img src="project/pagedeco/visit.png" alt="A sketch of an interior">
@@ -219,3 +224,4 @@
 
 
 </body></html>
+

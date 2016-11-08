@@ -83,6 +83,10 @@ img {
     background-repeat: no-repeat;
     text-align: center;
 }
+#logo-area{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
 
 #cover-content {
     display: table-cell;
@@ -172,7 +176,8 @@ only screen and (min-resolution: 1.5dppx) {
 #logo-frame {
     overflow: hidden;
     border: 0;
-    height: 400px; /* For browsers with JS disabled */
+    width: 100%;
+    height: 20em; /* For browsers with JS disabled */
 }
 #email-input {
     padding-right: 12px; /* no feedback glyph */
