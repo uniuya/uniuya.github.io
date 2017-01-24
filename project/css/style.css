@@ -189,29 +189,7 @@ only screen and (min-resolution: 1.5dppx) {
     background-size: 100%;
 }
 
-#pict-wojciech {
-    background-image: url("img/wojciech.jpg");
-}
 
-#pict-wojciech:hover {
-    background-image: url("img/wojciech-oculus.jpg");
-}
-
-#pict-jan {
-    background-image: url("img/jan.jpg");
-}
-
-#pict-jan:hover {
-    background-image: url("img/jan-oculus.jpg");
-}
-
-#pict-jagoda {
-    background-image: url("img/jagoda.jpg");
-}
-
-#pict-jagoda:hover {
-    background-image: url("img/jagoda-oculus.jpg");
-}
 
 #footer {
     background-color: #222;
